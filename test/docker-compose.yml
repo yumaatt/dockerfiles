@@ -1,0 +1,4 @@
+ubuntu14:
+  build: ./ubuntu14
+centos6:
+  build: ./centos6
