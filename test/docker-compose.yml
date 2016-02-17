@@ -2,3 +2,7 @@ ubuntu14:
   build: ./ubuntu14
 centos6:
   build: ./centos6
+#ubuntu14_10:
+#  image: localhost:5000/test_ubuntu14:1.0
+#centos6_10:
+#  image: localhost:5000/test_centos6:1.0

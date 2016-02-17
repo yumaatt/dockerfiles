@@ -1,0 +1,11 @@
+registry:
+  build: ./registry
+  ports:
+    - "5000:5000"
+registry_frontend:
+  image: konradkleine/docker-registry-frontend:v2
+  ports:
+    - "8080:80"
+  environment:
+    - ENV_DOCKER_REGISTRY_HOST=localhost
+    - ENV_DOCKER_REGISTRY_PORT=5000
