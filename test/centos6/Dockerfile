@@ -22,7 +22,7 @@ RUN chown docker /home/docker/.ssh/authorized_keys
 RUN chmod 600 /home/docker/.ssh/authorized_keys
 
 # setup sudoers
-RUN echo "docker ALL=(ALL) ALL" >> /etc/sudoers.d/docker
+RUN echo 'docker ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/docker
 
 # Set up SSHD config
 RUN sed -ri 's/#PermitRootLogin yes/PermitRootLogin yes/g' /etc/ssh/sshd_config
