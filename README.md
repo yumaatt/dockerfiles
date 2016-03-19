@@ -19,6 +19,12 @@ docker-compose build
 docker-compose up -d ubuntu14
 docker-compose up -d centos6
 ./setup.sh
+
+# phoply container
+cd /path/to/dockerfiles/phoply
+docker-compose build
+docker-compose up -d dev1
+./setup.sh
 ````
 
 registor
@@ -44,7 +50,8 @@ docker push localhost:5000/test_centos6:1.1
 
 info<br>
 test_ubuntu14:1.0 base setting installed<br>
-test_centos6:1.0 base setting installed
+test_centos6:1.0 base setting installed<br>
+phoply_dev1:1.0 base setting installed phoply develepment environment
 
 docker registry frontend<br>
 192.168.1.10:8080
