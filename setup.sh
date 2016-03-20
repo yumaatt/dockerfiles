@@ -14,6 +14,8 @@ sudo stone -p "${TEST_HOST1}:80" 10080 &
 sudo stone -p "${TEST_HOST1}:443" 10443 &
 # testhost1 hugo
 sudo stone -p "${TEST_HOST1}:10313" 10313 &
+# testhost1 rails
+sudo stone -p "${TEST_HOST1}:3000" 10300 &
 # testhost2
 sudo stone -p "${TEST_HOST2}:80" 11080 &
 sudo stone -p "${TEST_HOST2}:443" 11443 &
